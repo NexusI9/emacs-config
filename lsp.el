@@ -5,6 +5,9 @@
   (add-to-list 'company-backends 'company-capf)
   (global-company-mode))
 
+
+
+
 ;; set lsp-mode (intellisense)
 (use-package lsp-mode
   :ensure t
@@ -35,6 +38,11 @@
 (add-hook 'c-mode-hook 'lsp-deferred)
 (add-hook 'c++-mode-hook 'lsp-deferred)
 (add-hook 'python-mode 'lsp-deferred)
+(add-hook 'css-mode 'lsp-deferred)
+(add-hook 'js-mode-hook 'lsp-deferred)
+(add-hook 'typescript-mode-hook 'lsp-deferred)
+(add-hook 'tsx-ts-mode 'lsp-deferred)
+(add-hook 'html-mode-hook 'lsp-deferred)
 (with-eval-after-load 'lsp-mode
   (add-hook 'lsp-mode-hook #'lsp-enable-which-key-integration))
 
