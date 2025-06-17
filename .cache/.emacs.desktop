@@ -2,114 +2,54 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Tue Mar 25 09:49:35 2025
+;; Created Fri Apr  4 10:14:13 2025
 ;; Desktop file format version 208
 ;; Emacs version 29.4
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (26594 2991 236845 0) (desktop . "208") "elkhantour@IDN-Mac.local" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-JetBrains Mono-regular-normal-normal-*-12-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#d0d0d0") (background-color . "#070019") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated . t) (undecorated-round) (ns-appearance) (ns-transparent-titlebar) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (alpha-background) (fullscreen . maximized) (scroll-bar-foreground . "#857f8f") (scroll-bar-background . "#1d1a26") (display-type . color) (background-mode . dark) (cursor-color . "#ef6f11") (font-parameter) (environment) (last-focus-update . t) (frameset--id . "8E5C-D8FA-09D1-2B50") (frameset--mini t . t) (height . 54) (width . 202) (modeline . t) (unsplittable) (left . 422) (top . 104) (icon-name) (visibility . t) (display . "IDN-Mac.local") (explicit-name) (tool-bar-position . top)) ((min-height . 4) (min-width . 10) (min-height-ignore . 3) (min-width-ignore . 5) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 64) (min-pixel-width . 70) (min-pixel-height-ignore . 48) (min-pixel-width-ignore . 35) (min-pixel-height-safe . 16) (min-pixel-width-safe . 14)) leaf (pixel-width . 1436) (pixel-height . 855) (total-width . 205) (total-height . 53) (normal-height . 1.0) (normal-width . 1.0) (buffer ".emacs.d" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1044) (start . 1)) (prev-buffers ("shader.pbr.wgsl" 4482 4800) ("shader" 1 375) ("assets" 1 225) ("runtime" 1 224) ("webgpu-expe" 1 833) ("*scratch*" 1 1))))])
+(setq desktop-saved-frameset [frameset 1 (26607 16501 764843 0) (desktop . "208") "elkhantour@IDN-Mac.local" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-JetBrains Mono-regular-normal-normal-*-12-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#d0d0d0") (background-color . "#070019") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated . t) (undecorated-round) (ns-appearance) (ns-transparent-titlebar) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (alpha-background) (fullscreen . maximized) (scroll-bar-foreground . "#857f8f") (scroll-bar-background . "#1d1a26") (display-type . color) (background-mode . dark) (cursor-color . "#ef6f11") (font-parameter) (environment) (frameset--id . "7E50-A8FE-0EB1-32A3") (frameset--mini t . t) (height . 54) (width . 202) (modeline . t) (unsplittable) (left . 422) (top . 104) (icon-name) (visibility . t) (display . "IDN-Mac.local") (explicit-name) (tool-bar-position . top)) ((min-height . 4) (min-width . 10) (min-height-ignore . 3) (min-width-ignore . 6) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 64) (min-pixel-width . 70) (min-pixel-height-ignore . 48) (min-pixel-width-ignore . 42) (min-pixel-height-safe . 16) (min-pixel-width-safe . 14)) leaf (pixel-width . 1436) (pixel-height . 855) (total-width . 205) (total-height . 53) (normal-height . 1.0) (normal-width . 1.0) (buffer "init.el" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins 1) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 430) (start . 1)) (prev-buffers (".emacs.d" 1 981) ("*scratch*" 1 1))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '(#("metallic" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("build" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("create_de" 0 9 (isearch-case-fold-search t isearch-regexp-function nil)) #("pipeline_clear" 0 14 (isearch-case-fold-search t isearch-regexp-function nil)) #("draw" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("uniforms.length" 0 15 (isearch-case-fold-search t isearch-regexp-function nil)) #("normal" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("loader_gltf_bind_uniforms" 0 25 (isearch-case-fold-search t isearch-regexp-function nil)) #("reload" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("EDIT_S" 0 6 (isearch-case-fold-search nil isearch-regexp-function nil)) #("secon" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("focus" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("input" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("inputOptions" 0 12 (isearch-case-fold-search nil isearch-regexp-function nil)) #("resi" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("setActive" 0 9 (isearch-case-fold-search nil isearch-regexp-function nil))))
-(setq regexp-search-ring '(#("update" 0 6 (isearch-case-fold-search t))))
+(setq search-ring '(#("default" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("select" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("mesh_add" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("set_name" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("set_n" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("add_chil" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("add_chi" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("add_text" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("add_" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("set_sha" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("sete" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("print_m" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("printf" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("print" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("att" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("set_shader" 0 10 (isearch-case-fold-search t isearch-regexp-function nil))))
+(setq regexp-search-ring '(#("printf" 0 6 (isearch-case-fold-search t))))
 (setq register-alist nil)
-(setq file-name-history '("~/.emacs.d/" "~/Documents/C/webgpu-expe/" "~/.emacs.d/" "~/Documents/C/webgpu-expe/" "~/.emacs.d/" "~/Documents/C/webgpu-expe/" "~/.emacs.d/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/assets/shader/" "~/Documents/C/webgpu-expe/" "~/.emacs.d/" "~/Documents/C/webgpu-expe/" "~/" "~/.emacs.d/" "~/Documents/C/webgpu-expe/" "~/.emacs.d/" "~/Documents/C/webgpu-expe/" "~/.emacs.d/" "~/Documents/C/webgpu-expe/" "~/.emacs.d/" "~/Documents/C/webgpu-expe/" "~/.emacs.d/" "~/Documents/C/webgpu-expe/" "~/.emacs.d/" "~/Documents/C/webgpu-expe/" "~/.emacs.d/" "~/Documents/C/webgpu-expe/" "~/.emacs.d/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/resources/loader/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/runtime/assets/shader/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/assets/" "~/Documents/C/webgpu-expe/runtime/assets/shader/" "~/Documents/C/webgpu-expe/resources/debug/" "~/Documents/C/webgpu-expe/runtime/assets/shader/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/resources/debug/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/resources/debug/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/shader.c" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/runtime/assets/shader/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/runtime/assets/shader/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/backend/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/resources/primitive/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/resources/primitive/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/backend/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/main.c" "~/Documents/C/webgpu-expe/" "~/.emacs.d/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/main.c" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/main.c" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/runtime/shader.c" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/backend/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/resources/" "~/Documents/C/webgpu-expe" "~/Documents/C/webgpu-expe/backend/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/backend/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/backend/" "~/Documents/C/webgpu-expe/resources/loader/" "~/Documents/C/webgpu-expe/resources/" "~/Documents/C/webgpu-expe/runtime/shader.c" "~/Documents/C/webgpu-expe/resources/loader/" "~/Documents/C/webgpu-expe/" "~/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/resources/loader/" "~/Documents/C/webgpu-expe/runtime/"))
+(setq file-name-history '("~/.emacs.d/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/backend/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/resources/debug/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/runtime/assets/shader/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/main.c" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/backend/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/resources/debug/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/runtime/assets/shader/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/backend/" "~/Documents/C/webgpu-expe/runtime/assets/shader/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/assets/shader/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/backend/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/backend/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/main.c" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/utils/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/utils/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/utils/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/runtime/assets/shader/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/runtime/mesh.c" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/backend/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/assets/shader/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/backend/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/main.c" "~/Documents/C/webgpu-expe/backend/" "~/Documents/C/webgpu-expe/resources/loader/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/backend/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/backend/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/" "~/Documents/C/webgpu-expe/runtime/assets/shader/" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/backend/" "~/Documents/C/webgpu-expe/runtime/" "/usr/local/Cellar/emscripten/4.0.1/libexec/cache/sysroot/include/webgpu" "~/Documents/C/webgpu-expe/runtime/" "~/Documents/C/webgpu-expe/"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/Users/elkhantour/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(git-gutter-mode display-line-numbers-mode company-mode tab-line-mode eldoc-mode font-lock-mode)
+  430
+  '(376 nil)
+  nil
+  nil
+  '((buffer-display-time 26607 16495 197136 0) (buffer-file-coding-system . prefer-utf-8-unix))
+  '((mark-ring nil)))
+
 (desktop-create-buffer 208
   nil
   ".emacs.d"
   'dired-mode
   '(company-mode tab-line-mode font-lock-mode)
-  1044
+  981
   '(nil nil)
   t
   '("/Users/elkhantour/.emacs.d/")
-  '((buffer-display-time 26594 2989 651711 0))
+  '((buffer-display-time 26607 16493 893244 0))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
-  "/Users/elkhantour/Documents/C/webgpu-expe/runtime/assets/shader/shader.pbr.wgsl"
-  "shader.pbr.wgsl"
-  'fundamental-mode
-  '(lsp-mode company-mode lsp-completion-mode flymake-mode lsp-diagnostics-mode lsp-modeline-workspace-status-mode eldoc-mode lsp-managed-mode font-lock-mode tab-line-mode git-gutter-mode)
-  4800
-  '(4800 nil)
-  nil
-  nil
-  '((buffer-display-time 26594 2974 438236 0) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  nil
-  "shader"
-  'dired-mode
-  '(font-lock-mode tab-line-mode company-mode)
-  375
+  "/Users/elkhantour/Documents/C/webgpu-expe/runtime/material.h"
+  "material.h"
+  'c-mode
+  '(lsp-mode font-lock-mode tab-line-mode company-mode display-line-numbers-mode git-gutter-mode)
+  1
   '(nil nil)
-  t
-  '("/Users/elkhantour/Documents/C/webgpu-expe/runtime/assets/shader/")
-  '((buffer-display-time 26594 2935 747707 0))
+  nil
+  nil
+  '((indent-tabs-mode . t) (buffer-display-time 26607 16488 124067 0) (buffer-file-coding-system . utf-8-unix))
   '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  nil
-  "assets"
-  'dired-mode
-  '(font-lock-mode tab-line-mode company-mode)
-  225
-  '(nil nil)
-  t
-  '("/Users/elkhantour/Documents/C/webgpu-expe/runtime/assets/")
-  '((buffer-display-time 26594 2935 267414 0))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  nil
-  "runtime"
-  'dired-mode
-  '(font-lock-mode tab-line-mode company-mode)
-  224
-  '(nil nil)
-  t
-  '("/Users/elkhantour/Documents/C/webgpu-expe/runtime/")
-  '((buffer-display-time 26594 2934 659773 0))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  nil
-  "webgpu-expe"
-  'dired-mode
-  '(font-lock-mode tab-line-mode company-mode)
-  833
-  '(nil nil)
-  t
-  '("/Users/elkhantour/Documents/C/webgpu-expe/")
-  '((buffer-display-time 26594 2932 683926 0))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/Users/elkhantour/.emacs.d/lsp.el"
-  "lsp.el"
-  'emacs-lisp-mode
-  '(git-gutter-mode display-line-numbers-mode company-mode tab-line-mode eldoc-mode font-lock-mode)
-  1880
-  '(1880 nil)
-  nil
-  nil
-  '((buffer-display-time 26594 2890 584868 904000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (1880 1320 1830 1879))))
-
-(desktop-create-buffer 208
-  "/Users/elkhantour/.emacs.d/wgsl-mode.el"
-  "wgsl-mode.el"
-  'emacs-lisp-mode
-  '(git-gutter-mode display-line-numbers-mode company-mode tab-line-mode eldoc-mode font-lock-mode)
-  4287
-  '(3980 nil)
-  nil
-  nil
-  '((buffer-display-time 26594 2887 634876 904000) (buffer-file-coding-system . prefer-utf-8-unix))
-  '((mark-ring (3980 4019 3980 4287))))
 

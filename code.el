@@ -22,7 +22,7 @@
     (interactive)
     (if (derived-mode-p 'prolog-mode)
         (prolog-indent-buffer)
-      (format-all-buffer)))
+     (format-all-buffer)))
   :config
   (global-set-key (kbd "M-F") #'nk/format-code)
   (add-hook 'prog-mode-hook #'format-all-ensure-formatter))
@@ -63,7 +63,8 @@
     (shell)
 
     ;; Return focus to main window (left)
-    ;; (select-window main)))
+    ;; (select-window main)
+    ))
 
 (global-set-key (kbd "C-c c") 'code-layout) ;; Bind to a shortcut
 
@@ -76,3 +77,26 @@
   (global-git-gutter-mode))
 
 (global-set-key (kbd "C-x g") 'git-gutter-mode)
+
+
+;; auto reload file on change
+(global-auto-revert-mode t)
+
+;; auto make file mode
+(setq auto-mode-alist
+      (append '(("Makefile\\'" . makefile-mode)
+                ("makefile\\'" . makefile-mode))
+              auto-mode-alist))
+
+
+;; auto find Makefile and compile on C-c m
+(defun my/compile-in-project-root ()
+  "Run make from the nearest parent directory containing a Makefile."
+  (interactive)
+  (let ((root (locate-dominating-file default-directory "Makefile")))
+    (if root
+        (let ((compile-command (format "make -C %s" root)))
+          (compile compile-command))
+      (message "No Makefile found in any parent directory."))))
+
+(global-set-key (kbd "C-c m") 'my/compile-in-project-root)

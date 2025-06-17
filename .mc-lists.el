@@ -3,13 +3,28 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+	c-electric-lt-gt
+	c-electric-star
+	c-indent-line-or-region
 	end-of-buffer
 	))
 
 (setq mc/cmds-to-run-once
       '(
+	c-electric-colon
+	c-electric-paren
+	c-electric-semi&comma
+	c-electric-slash
 	dired-mouse-find-file-other-window
 	dired-previous-line
+	electric-pair-delete-pair
+	find-file
+	indent-for-tab-command
 	kill-region
+	mouse-drag-mode-line
+	mouse-select-window
 	mouse-set-region
+	nk/format-code
+	shell-command
+	tab-line-select-tab
 	))

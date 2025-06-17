@@ -22,7 +22,7 @@
 ;; (load "~/.emacs.d/dashboard.el")
 
 ;; save sessions
-(load "~/.emacs.d/desktop.el")
+;; (load "~/.emacs.d/desktop.el")
 
 ;; tabs
 (load "~/.emacs.d/tabs.el")
