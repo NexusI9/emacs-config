@@ -43,6 +43,7 @@
 (add-hook 'typescript-mode-hook 'lsp-deferred)
 (add-hook 'tsx-ts-mode 'lsp-deferred)
 (add-hook 'html-mode-hook 'lsp-deferred)
+(add-hook 'php-mode-hook 'lsp-deferred)
 (with-eval-after-load 'lsp-mode
   (add-hook 'lsp-mode-hook #'lsp-enable-which-key-integration))
 

@@ -1,3 +1,6 @@
 themes/tokyonight-themes/*
 *~
 .cache/
+autosave/
+auto-save-list/
+backup/
