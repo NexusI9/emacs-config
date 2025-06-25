@@ -7,3 +7,5 @@ backup/
 elpa/
 lsp-cache/
 tree-sitter/
+.lsp*
+.mc*.el

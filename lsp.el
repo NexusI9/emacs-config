@@ -35,17 +35,15 @@
   :ensure t
   )
 
-(add-hook 'c-mode-hook 'lsp-deferred)
-(add-hook 'c++-mode-hook 'lsp-deferred)
-(add-hook 'python-mode 'lsp-deferred)
-(add-hook 'css-mode 'lsp-deferred)
-(add-hook 'js-mode-hook 'lsp-deferred)
-(add-hook 'typescript-mode-hook 'lsp-deferred)
-(add-hook 'tsx-ts-mode 'lsp-deferred)
-(add-hook 'html-mode-hook 'lsp-deferred)
-(add-hook 'php-mode-hook 'lsp-deferred)
+;; auto swith to lsp if find mode
+(add-hook 'prog-mode-hook
+          (lambda ()
+            (unless (derived-mode-p 'emacs-lisp-mode)
+              (lsp-deferred))))
+
 (with-eval-after-load 'lsp-mode
-  (add-hook 'lsp-mode-hook #'lsp-enable-which-key-integration))
+(add-hook 'lsp-mode-hook #'lsp-enable-which-key-integration))
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
