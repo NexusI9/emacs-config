@@ -30,9 +30,9 @@
 
 
 ;; DELETEME?
-(add-hook 'php-mode-hook
-          (lambda ()
-            (setq-local format-all-formatters '(("PHP" php-cs-fixer)))))
+;;(add-hook 'php-mode-hook
+;;          (lambda ()
+;;            (setq-local format-all-formatters '(("PHP" php-cs-fixer)))))
 
 
 ;; Copy line
@@ -120,3 +120,13 @@
       (term-send-raw-string "htop\n"))
     (switch-to-buffer term-buffer)))
 
+
+
+;; treesite-auto
+(use-package treesit-auto
+  :ensure t
+  :custom
+  (treesit-auto-install 'prompt)
+  :config
+  (treesit-auto-add-to-auto-mode-alist 'all)
+  (global-treesit-auto-mode))
