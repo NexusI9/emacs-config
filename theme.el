@@ -3,6 +3,9 @@
 ;;(require 'tokyonight-themes)
 ;;(load-theme 'tokyonight-night :no-confirm)
 
+(use-package modus-themes :ensure t)
+(use-package ef-themes :ensure t)
+
 (defvar my-light-themes '(modus-operandi ef-duo-light)
   "List of light themes to toggle.")
 
