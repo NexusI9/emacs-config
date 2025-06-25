@@ -16,16 +16,18 @@
 ;; Beautify
 ;; https://github.com/lassik/emacs-format-all-the-code/blob/master/format-all.el
 (use-package format-all
+  :ensure t
   :preface
   (defun nk/format-code ()
     "Auto-format whole buffer."
     (interactive)
     (if (derived-mode-p 'prolog-mode)
         (prolog-indent-buffer)
-     (format-all-buffer)))
+      (format-all-buffer)))
   :config
   (global-set-key (kbd "M-F") #'nk/format-code)
   (add-hook 'prog-mode-hook #'format-all-ensure-formatter))
+
 
 ;; DELETEME?
 (add-hook 'php-mode-hook
