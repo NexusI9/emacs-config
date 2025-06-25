@@ -29,10 +29,16 @@
   (add-hook 'prog-mode-hook #'format-all-ensure-formatter))
 
 
-;; DELETEME?
-;;(add-hook 'php-mode-hook
-;;          (lambda ()
-;;            (setq-local format-all-formatters '(("PHP" php-cs-fixer)))))
+(add-hook 'php-mode-hook
+          (lambda ()
+            (setq-local format-all-formatters
+                        '(("PHP" prettier)))))
+
+
+;; Ensure using php mode (instead of HTML)
+(use-package php-mode
+  :ensure t
+  :mode ("\\.php\\'" . php-mode))
 
 
 ;; Copy line
