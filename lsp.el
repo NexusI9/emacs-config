@@ -1,4 +1,4 @@
-;; 
+;;
 (use-package company
   :ensure t
   :config
@@ -13,6 +13,7 @@
   :ensure t
   :commands lsp
   :config
+  ;; General config
   (setq lsp-auto-guess-root t)
   (setq lsp-log-io nil)
   (setq lsp-restart 'auto-restart)
@@ -29,7 +30,10 @@
   (setq lsp-enable-imenu nil)
   (setq lsp-enable-snippet nil)
   (setq read-process-output-max (* 1024 1024)) ;; 1MB
-  (setq lsp-idle-delay 0.5))
+  (setq lsp-idle-delay 0.5)
+
+  ;; Keybinding
+  (define-key lsp-mode-map (kbd "C-c C-l") lsp-command-map))
 
 (use-package lsp-treemacs
   :ensure t
@@ -42,7 +46,7 @@
               (lsp-deferred))))
 
 (with-eval-after-load 'lsp-mode
-(add-hook 'lsp-mode-hook #'lsp-enable-which-key-integration))
+  (add-hook 'lsp-mode-hook #'lsp-enable-which-key-integration))
 
 
 (custom-set-variables
