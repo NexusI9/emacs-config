@@ -26,7 +26,14 @@
 
 ;;; Code:
 
+;;; wgsl-mode.el --- Major mode for WGSL (WebGPU Shading Language) -*- lexical-binding: t; -*-
+
 (require 'cc-fonts)
+(require 'rx)
+
+;; ----------------------------
+;; Syntax highlighting patterns
+;; ----------------------------
 
 (defconst wgsl-keywords-regexp
   (rx (seq (group (or "struct" "fn" "var" "let" "ptr" "type")) (or space "<"))))
@@ -41,8 +48,8 @@
 (defconst wgsl-attributes-regexp
   (rx (seq
        (or "[[" "," "@" space)
-       (group (or "builtin" "block" "location" "group" "binding" "stage" "workgroup_size" "access"
-                  "stride"))
+       (group (or "builtin" "block" "location" "group" "binding" "stage"
+                  "workgroup_size" "access" "stride"))
        (or "]]" "("))))
 
 (defconst wgsl-storage-classes-regexp
@@ -112,15 +119,50 @@
     (,wgsl-variable-name-regexp 1 font-lock-variable-name-face)
     (,wgsl-function-name-regexp 1 font-lock-function-name-face)))
 
+;; ----------------------------
+;; Mode definition
+;; ----------------------------
+
 ;;;###autoload
-(define-derived-mode wgsl-mode c++-mode "WGSL"
-  "Major mode for WGSL source."
-  (add-to-list 'c-offsets-alist '(access-label . 0))
-  (font-lock-remove-keywords 'wgsl-mode c++-font-lock-keywords-3)
-  (font-lock-add-keywords nil wgsl-font-lock-keywords))
+(define-derived-mode wgsl-mode prog-mode "WGSL"
+  "Major mode for editing WebGPU Shading Language (WGSL) files."
+
+  ;; syntax highlighting
+  (setq font-lock-defaults '(wgsl-font-lock-keywords))
+
+  ;; comment syntax
+  (modify-syntax-entry ?/ ". 124b" wgsl-mode-syntax-table)
+  (modify-syntax-entry ?* ". 23" wgsl-mode-syntax-table)
+  (modify-syntax-entry ?\n "> b" wgsl-mode-syntax-table)
+
+  ;; indentation
+  (setq-local indent-line-function #'wgsl-indent-line))
+
+(defun wgsl-indent-line ()
+  "Simple indentation: +2 spaces inside braces."
+  (interactive)
+  (let ((indent-level 0)
+        (pos (- (point-max) (point))))
+    (save-excursion
+      (beginning-of-line)
+      (cond
+       ((looking-at "^[ \t]*}")
+        (save-excursion
+          (forward-line -1)
+          (when (re-search-backward "{" nil t)
+            (setq indent-level (current-indentation)))))
+       (t
+        (save-excursion
+          (forward-line -1)
+          (when (re-search-backward "{" nil t)
+            (setq indent-level (+ (current-indentation) 2)))))))
+    (indent-line-to indent-level)
+    (when (> (- (point-max) pos) (point))
+      (goto-char (- (point-max) pos)))))
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.wgsl\\'" . wgsl-mode))
 
 (provide 'wgsl-mode)
+
 ;;; wgsl-mode.el ends here

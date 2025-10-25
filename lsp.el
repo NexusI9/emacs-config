@@ -34,6 +34,7 @@
 
   ;; Keybinding
   (define-key lsp-mode-map (kbd "C-c C-l") lsp-command-map))
+  (global-set-key (kbd "M-F") #'lsp-format-buffer)
 
 (use-package lsp-treemacs
   :ensure t
@@ -63,6 +64,8 @@
  )
 
 
+
+
 ;;WGSL
 
 ;; Associate .wgsl files with wgsl-mode
@@ -78,3 +81,4 @@
 
 ;; Optionally bind lsp-format-buffer to a key for formatting
 (define-key wgsl-mode-map (kbd "C-c C-f") #'lsp-format-buffer)
+
