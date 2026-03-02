@@ -64,21 +64,9 @@
  )
 
 
+(setq typescript-indent-level 1)
 
-
-;;WGSL
-
-;; Associate .wgsl files with wgsl-mode
-(add-to-list 'auto-mode-alist '("\\.wgsl\\'" . wgsl-mode))
-
-;; Set up lsp-language-id-configuration for wgsl
-(setq lsp-language-id-configuration
-      (append lsp-language-id-configuration
-              '(("\\.wgsl\\'" . "wgsl"))))
-
-;; Start lsp-mode automatically for wgsl-mode
-(add-hook 'wgsl-mode-hook #'lsp)
-
-;; Optionally bind lsp-format-buffer to a key for formatting
-(define-key wgsl-mode-map (kbd "C-c C-f") #'lsp-format-buffer)
-
+;; prevents auto updating imports path
+;; https://www.reddit.com/r/emacs/comments/1b0ppls/anyone_using_lspmode_with_tsls_having_trouble/
+;; https://emacs-lsp.github.io/lsp-mode/page/settings/mode/#lsp-apply-edits-after-file-operations
+(setq lsp-apply-edits-after-file-operations nil)
