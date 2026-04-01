@@ -3,7 +3,7 @@
 # key: cm
 # --
 /**
- * ${1:Brief description.} 
+ * ${1:Brief description} 
  * 
  * @param ${2:parameter} ${3:description}
  * @returns ${4:description}
