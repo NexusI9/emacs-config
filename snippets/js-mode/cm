@@ -4,8 +4,9 @@
 # --
 /**
  * ${1:Brief description} 
- * 
- * @param ${2:parameter} ${3:description}
- * @returns ${4:description}
+ * @description ${2:Common use case}
+ *
+ * @param ${3:parameter} - ${4:description}
+ * @returns ${5:description}
  * $0
  */
