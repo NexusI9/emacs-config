@@ -138,3 +138,13 @@
   (global-treesit-auto-mode))
 
 
+
+;; Yasnippet
+(use-package yasnippet
+  :ensure t
+  :config
+  (yas-global-mode 1))
+
+;; Optional: collection of ready-made snippets
+(use-package yasnippet-snippets
+  :ensure t)
