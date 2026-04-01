@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: cmm
+# key: cmm
+# --
+/**
+ * ${1:Brief description.} 
+ * 
+ * @param ${2:parameter} ${3:description}
+ * @returns ${4:description}
+ * @exception ${5:exception}
+ * @see ${6:reference}
+ * @author ${7:author}
+ * $0
+ */
