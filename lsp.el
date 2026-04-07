@@ -70,3 +70,7 @@
 ;; https://www.reddit.com/r/emacs/comments/1b0ppls/anyone_using_lspmode_with_tsls_having_trouble/
 ;; https://emacs-lsp.github.io/lsp-mode/page/settings/mode/#lsp-apply-edits-after-file-operations
 (setq lsp-apply-edits-after-file-operations nil)
+
+
+;; Maps asm-lsp to asm mode
+(add-to-list 'lsp-language-id-configuration '(asm-mode . "asm"))
