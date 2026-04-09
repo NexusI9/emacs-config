@@ -148,3 +148,8 @@
 ;; Optional: collection of ready-made snippets
 (use-package yasnippet-snippets
   :ensure t)
+
+
+;; NASM assembly handling
+(require 'nasm-mode)
+(add-to-list 'auto-mode-alist '("\\.asm\\'" . nasm-mode))
