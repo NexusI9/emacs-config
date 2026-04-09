@@ -6,4 +6,6 @@
 
 (setq dashboard-startup-banner "~/.emacs.d/media/logo.svg")
 
-(setq dashboard-items '((recents   . 10)))
+(setq dashboard-items '((recents   . 5)
+			(bookmarks . 5)
+			(projects  . 5)))
