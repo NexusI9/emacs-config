@@ -29,18 +29,6 @@
 ;;   (add-hook 'prog-mode-hook #'format-all-ensure-formatter))
 
 
-(add-hook 'php-mode-hook
-          (lambda ()
-            (setq-local format-all-formatters
-                        '(("PHP" prettier)))))
-
-
-;; Ensure using php mode (instead of HTML)
-(use-package php-mode
-  :ensure t
-  :mode ("\\.php\\'" . php-mode))
-
-
 ;; Copy line
 (defun copy-line ()
   (interactive)
@@ -116,7 +104,6 @@
 
 
 ;; htop command
-
 (defun htop ()
   "Open htop in a new terminal buffer and rename it to *htop*."
   (interactive)

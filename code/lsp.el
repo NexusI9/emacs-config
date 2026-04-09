@@ -34,7 +34,7 @@
 
   ;; Keybinding
   (define-key lsp-mode-map (kbd "C-c C-l") lsp-command-map))
-  (global-set-key (kbd "M-F") #'lsp-format-buffer)
+  ;;(global-set-key (kbd "M-F") #'lsp-format-buffer)
 
 (use-package lsp-treemacs
   :ensure t

@@ -24,11 +24,17 @@
 ;; tabs
 (load "~/.emacs.d/tabs.el")
 
+
 ;; wgsl-mode
 (load "~/.emacs.d/code/wgsl-mode.el")
 
 ;; lsp
 (load "~/.emacs.d/code/lsp.el")
+
+;; format
+(load "~/.emacs.d/code/format.el")
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -48,11 +54,9 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:background nil)))))
 
-(add-to-list 'load-path "~/.emacs.d/code")
-(require 'slang-mode)
-(require 'slang-lsp)
-;; Initialize LSP support
-(slang-lsp-initialize)
+
+;; slang mode with lsp support
+(load "~/.emacs.d/code/slang-init.el")
 
 
 ;; backup/autosave
