@@ -80,3 +80,7 @@
 ;; Maps slang
 (with-eval-after-load 'lsp-mode
   (add-to-list 'lsp-language-id-configuration '(slang-mode . "slang")))
+
+;; Maps Makefile
+(with-eval-after-load 'lsp-mode
+  (add-to-list 'lsp-language-id-configuration '(makefile-mode . "makefile")))
