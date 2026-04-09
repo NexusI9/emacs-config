@@ -38,4 +38,5 @@
         (window-state-put (read (current-buffer)) (frame-root-window))))
     (message "Window layout restored!")))
 
-(add-hook 'emacs-startup-hook #'load-window-layout)
+;; doesn't work
+;; (add-hook 'emacs-startup-hook #'load-window-layout)

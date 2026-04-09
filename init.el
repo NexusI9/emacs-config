@@ -16,14 +16,13 @@
 (load "~/.emacs.d/multicursors.el")
 
 ;; dashboard
-;; (load "~/.emacs.d/dashboard.el")
+(load "~/.emacs.d/dashboard.el")
 
 ;; save sessions
 ;; (load "~/.emacs.d/desktop.el")
 
 ;; tabs
 (load "~/.emacs.d/tabs.el")
-
 
 ;; wgsl-mode
 (load "~/.emacs.d/code/wgsl-mode.el")
