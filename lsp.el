@@ -73,4 +73,6 @@
 
 
 ;; Maps asm-lsp to asm mode
-(add-to-list 'lsp-language-id-configuration '(asm-mode . "asm"))
+(with-eval-after-load 'lsp-mode
+  (add-to-list 'lsp-language-id-configuration '(nasm-mode . "nasm"))
+  (add-to-list 'lsp-language-id-configuration '(asm-mode . "nasm")))
