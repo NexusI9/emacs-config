@@ -7,10 +7,7 @@
 (load "~/.emacs.d/window.el")
 
 ;; code
-(load "~/.emacs.d/code.el")
-
-;; wgsl-mode
-(load "~/.emacs.d/wgsl-mode.el")
+(load "~/.emacs.d/code/code.el")
 
 ;; theme
 (load "~/.emacs.d/theme.el")
@@ -27,8 +24,11 @@
 ;; tabs
 (load "~/.emacs.d/tabs.el")
 
+;; wgsl-mode
+(load "~/.emacs.d/code/wgsl-mode.el")
+
 ;; lsp
-(load "~/.emacs.d/lsp.el")
+(load "~/.emacs.d/code/lsp.el")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -47,6 +47,13 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:background nil)))))
+
+(add-to-list 'load-path "~/.emacs.d/code")
+(require 'slang-mode)
+(require 'slang-lsp)
+;; Initialize LSP support
+(slang-lsp-initialize)
+
 
 ;; backup/autosave
 (defvar backup-dir (expand-file-name "~/.emacs.d/backup/"))
