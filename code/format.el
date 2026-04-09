@@ -20,7 +20,8 @@
   :hook (prog-mode . format-all-mode)
   :config
   (setq-default format-all-formatters
-                '(("CSS"     (prettier)))))
+                '(("CSS"     (prettier))
+		  ("SCSS"    (prettier)))))
 
 
 (defun my/format-buffer ()
